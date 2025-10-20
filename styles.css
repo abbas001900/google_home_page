@@ -10,7 +10,7 @@
 /* Définiton des variables globales et du style principale*/
 :root
 {
-    --button-hover-box-shadow-color: #000000;
+    --button-hover-box-shadow-color: #9a9a9a;
     --google-blue: #4285F4;
     --google-red: #EA4335;
     --google-yellow: #FBBC05;
@@ -62,6 +62,11 @@ ul
     justify-content: center;
     max-width: 100%;
     overflow: hidden;
+}
+
+ul li::marker
+{
+    color: var(--link-grey);
 }
 
 header nav ul
@@ -119,6 +124,10 @@ footer
     font-size: clamp(0.8rem, 2vw, 1rem);
 }
 
+footer p
+{
+    color: var(--link-grey);
+}
 /* Section des classes */
 .header-link
 {
@@ -166,6 +175,11 @@ footer
     color: var(--google-red);
 }
 
+.footer-link
+{
+    color: var(--link-grey);
+    text-decoration: none;
+}
 /* Section des id*/
 #research-section
 {
