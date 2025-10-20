@@ -1,0 +1,241 @@
+/* Initialisation valeurs par défauts*/
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif;
+}
+
+/* Définiton des variables globales et du style principale*/
+:root
+{
+    --button-hover-box-shadow-color: #000000;
+    --google-blue: #4285F4;
+    --google-red: #EA4335;
+    --google-yellow: #FBBC05;
+    --google-green: #34A853;
+    --background-white: #fff;
+    --text-grey: #202124;
+    --link-grey: #70757a;
+    --hover-grey: #f1f3f4;
+    --header-links: 16px;
+    --google-logo-font-size-max: 120px;
+    --google-logo-font-size-pref: 10vw;
+    --google-logo-font-size-min: 60px;
+    --search-input: 25px;
+    --google-logo-font-weight: 800
+}
+
+/* Section des selecteurs simples*/
+body
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    min-height: 100vh;
+    padding-top: 1rem;
+}
+
+header
+{
+    padding: 1rem;
+    width: 100%;
+    max-width: 1024px;
+    display: flex;
+    justify-content: end;
+}
+
+nav
+{
+    display: flex;
+    width: fit-content;
+    max-width: 100%;
+}
+
+ul
+{
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    justify-content: center;
+    max-width: 100%;
+    overflow: hidden;
+}
+
+header nav ul
+{
+    gap: 0.25rem;
+    list-style: none;
+}
+
+main
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50rem;
+    max-width: 100%;
+}
+
+form
+{
+    width: 100%;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+}
+
+button
+{
+    font-size: clamp(0.6rem, 2vw, 0.875rem);
+    font-weight: bold;
+    padding: 0.5rem;
+    border-radius: 2rem;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    box-shadow: 0 0.1rem 0.1rem var(--button-hover-box-shadow-color);
+    color: var(--google-green);
+    background-color: #f8f9fa;
+    border: none;
+}
+
+footer
+{
+    padding-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.3rem;
+    width: fit-content;
+    max-width: 100%;
+    font-size: clamp(0.8rem, 2vw, 1rem);
+}
+
+/* Section des classes */
+.header-link
+{
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    color: var(--link-grey);
+    font-size: var(--header-links);
+}
+
+.header-link--gmail:hover
+{
+    background: var(--hover-grey);
+    border-radius: 0.25rem;
+}
+
+.google
+{
+    font-size: clamp(var(--google-logo-font-size-min), var(--google-logo-font-size-pref), var(--google-logo-font-size-max));
+    font-weight: var(--google-logo-font-weight);
+}
+
+.google:nth-child(1)
+{
+    color: var(--google-blue);
+}
+.google:nth-child(2)
+{
+    color: var(--google-red);
+}
+.google:nth-child(3)
+{
+    color: var(--google-yellow);
+}
+.google:nth-child(4)
+{
+    color: var(--google-blue);
+}
+.google:nth-child(5)
+{
+    color: var(--google-green);
+}
+.google:nth-child(6)
+{
+    color: var(--google-red);
+}
+
+/* Section des id*/
+#research-section
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 70%;
+}
+
+#top-section
+{
+    display: flex;
+    width: fit-content;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+}
+
+#google-container
+{
+    display: flex;
+    flex-direction: row;
+    width: fit-content;
+    justify-content: center;
+    max-width: 100%;
+    padding: 1rem;
+}
+
+#search-input
+{
+    max-width: 100%;
+    border-radius: 2rem;
+    padding: 0.5rem 0 0.5rem 1rem;
+    font-size: clamp(15px, 20px,var(--search-input));
+    border: 1px solid;
+}
+
+#search-input:focus
+{
+    outline-color: var(--google-blue);
+}
+
+#buttons
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 1rem;
+}
+
+/* Responsivivité à 768px */
+@media (max-width: 768px) 
+{
+    header
+    {
+        justify-content: center;
+    }   
+
+    #research-section
+    {
+        max-width: 345px;
+        width: 100%;
+    }
+}
+
+/*Responsivité à 425px*/
+@media (max-width: 425px)
+{
+    #research-section
+    {
+        width: 90%;
+    }
+} 
