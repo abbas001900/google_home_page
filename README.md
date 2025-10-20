@@ -18,7 +18,7 @@ Tout d'abord dans le head, j'ai défini le lien de vers le style css qui sera ap
 * A l'intérieur du footer, un p pour l'adressage et une nav qui contient les confidentialités paramètres et conditions.
 
 ## Structure CSS
-A ce niveau, j'ai séctionné la palette de couleur qui nous avait été donnée, pour les stocker dans des variables avec :root, afin de pouvoir mieux les situés. Pour mieux stylisé les différents container, j'ai privilégier l'utilisation des classes pour ceux qui se répètent afin de les faire hérité d'un design similaire aux container concernés, l'utilisation des flexbox et de ces différents caractéristiques. Au niveau de la responsivité, le design change à partir de la largeur d'écran 768px, où la disposition devient verticale et centrée comme l'illustre l'image qui suit:<br>
+A ce niveau, j'ai séctionné la palette de couleur qui nous avait été donnée, pour les stocker dans des variables avec :root, afin de pouvoir mieux les situés. Pour mieux stylisé les différents container, j'ai privilégier l'utilisation des classes pour ceux qui se répètent afin de les faire hérité d'un design similaire aux container concernés, l'utilisation des flexbox et de ces différents caractéristiques. Au niveau de la responsivité, le design change à partir de la largeur d'écran 768px, ensuite à 425px comme l'illustre les images qui suivent:<br>
 
 ### 1024px
 <img src="images/img_responsive1.png" alt="image responsive1"><br>
@@ -31,3 +31,9 @@ A ce niveau, j'ai séctionné la palette de couleur qui nous avait été donnée
 
 ### Rendu
 <img src="images/img_rendu.png" alt="image rendu">
+
+## Liens
+### liens vers repo github:
+[Github Repositorry](https://github.com/abbas001900/google_home_page.git)
+### liens vers la github page:
+[Github Page](https://abbas001900.github.io/google_home_page/)
